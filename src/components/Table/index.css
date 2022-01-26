@@ -1,0 +1,23 @@
+.table-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* .nothing-to-show-heading {
+
+} */
+
+.table {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+.table-head {
+    /* border: 1px solid red; */
+}
+
+td, th {
+    border: solid 1px #ccc;
+}
