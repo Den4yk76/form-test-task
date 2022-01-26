@@ -5,36 +5,44 @@ import Table from './Table/Table';
 import './styles.css';
 
 export default function App() {
-  const [applicants, setApplicants] = useState([]);
+    const [applicants, setApplicants] = useState([]);
 
-  useEffect(() => {
-    const parsedApplicatns = JSON.parse(localStorage.getItem('applicants'));
-    if (parsedApplicatns) {
-      setApplicants(parsedApplicatns);
-    }
-  }, []);
+    useEffect(() => {
+        const parsedApplicatns = JSON.parse(localStorage.getItem('applicants'));
+        if (parsedApplicatns) {
+            setApplicants(parsedApplicatns);
+        }
+    }, []);
 
-  useEffect(() => {
-    localStorage.setItem('applicants', JSON.stringify(applicants));
-  }, [applicants]);
+    useEffect(() => {
+        localStorage.setItem('applicants', JSON.stringify(applicants));
+    }, [applicants]);
 
-  const addContact = (firstName, lastName, phone, gender, age) => {
-    setApplicants(prevState => [
-      ...prevState,
-      { id: uuidv4(), firstName, lastName, phone, gender, age },
-    ]);
-  };
+    const addContact = (firstName, lastName, phone, gender, age) => {
+        gender == true ? (gender = 'male') : (gender = 'female');
 
-  const deleteContact = e => {
-    setApplicants(prevState => prevState.filter(el => el.id !== e.target.id));
-  };
+        setApplicants(prevState => [
+            ...prevState,
+            { id: uuidv4(), firstName, lastName, phone, gender, age },
+        ]);
+    };
 
-  return (
-    <section className="info-section">
-      <h2>About you</h2>
-      <Form addContact={addContact} />
-      <h2>Add a new item to the table:</h2>
-      <Table applicants={applicants} deleteContact={deleteContact} />
-    </section>
-  );
+    const deleteContact = e => {
+        setApplicants(prevState =>
+            prevState.filter(el => el.id !== e.target.id),
+        );
+    };
+
+    return (
+        <section className="info-section">
+            <h2>About you</h2>
+            <Form addContact={addContact} />
+            <h2>List of my friends:</h2>
+            {applicants.length > 0 ? (
+                <Table applicants={applicants} deleteContact={deleteContact} />
+            ) : (
+                <h2>Nothing to show :(</h2>
+            )}
+        </section>
+    );
 }
