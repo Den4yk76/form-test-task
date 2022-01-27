@@ -91,7 +91,7 @@ export default function Form({ addContact }) {
               setGender(e.target.value);
             }}
           />
-          <label className="gender-label" htmlFor="gender">
+          <label className="gender-label" htmlFor="gender_male">
             Male
           </label>
           <input
@@ -105,7 +105,7 @@ export default function Form({ addContact }) {
               setGender(e.target.value);
             }}
           />
-          <label className="gender-label" htmlFor="gender">
+          <label className="gender-label" htmlFor="gender_female">
             Female
           </label>
         </div>
