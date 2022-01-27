@@ -27,6 +27,14 @@ margin-top: 10px;
     border-radius: 5px;
 }
 
+.form-input--validation:valid {
+    border: 1px solid green;
+}
+
+.form-input--validation:invalid:not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
 .form-button {
     display: block;
     width: 200px;
