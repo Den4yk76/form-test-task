@@ -1,7 +1,7 @@
 .label {
- display: flex;
- flex-direction: column;
+ display: block;
  margin-bottom: 10px;
+ font-weight: bold;
 }
 
 .label:not(:first-child) {
@@ -16,6 +16,10 @@ margin-top: 10px;
     margin-left: 50px;
 }
 
+.gender-label {
+font-weight: 100;
+}
+
 .gender-label:not(:first-child) {
     margin-left: 10px;
 }
@@ -24,7 +28,7 @@ margin-top: 10px;
     width: 100%;
     height: 30px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .form-input--validation:valid {
@@ -32,12 +36,20 @@ margin-top: 10px;
 }
 
 .form-input--validation:invalid:not(:placeholder-shown) {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 .form-button {
     display: block;
+    border: none;
+    border-radius: 8px;
+    background-color: lightsalmon;
+    font-weight: bold;
     width: 200px;
     height: 40px;
     margin: 10px auto 0 auto;
+}
+
+.form-button:hover, .form-button:focus {
+    background-color: rgb(255, 142, 97);
 }

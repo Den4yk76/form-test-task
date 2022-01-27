@@ -34,14 +34,23 @@ export default function App() {
   return (
     <section className="info-section">
       <div className="form-container">
-        <h2 className="form-heading">About you</h2>
+        <h2 className="form-heading">
+          <span className="stroke">About</span> you
+        </h2>
         <Form addContact={addContact} />
       </div>
-      <h2 className="table-heading">List of my friends:</h2>
+      <h2 className="table-heading">
+        <span className="stroke">L</span>ist <span className="stroke">o</span>f{' '}
+        <span className="stroke">m</span>y <span className="stroke">f</span>
+        riends:
+      </h2>
       {applicants.length > 0 ? (
         <Table applicants={applicants} deleteContact={deleteContact} />
       ) : (
-        <h2 className="nothing-to-show-heading">Nothing to show :(</h2>
+        <h2 className="nothing-to-show-heading">
+          {' '}
+          <span className="stroke">Sorry</span>, we have nothing to show :(
+        </h2>
       )}
     </section>
   );

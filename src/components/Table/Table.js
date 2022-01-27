@@ -45,7 +45,10 @@ export default function Table({ applicants, deleteContact }) {
         <tr className="table-head">
           <th className="table-head">
             <button
-              className={'table-head-btn ' + getClassNamesFor('firstName')}
+              className={
+                'table-head-btn table-head-btn--first ' +
+                getClassNamesFor('firstName')
+              }
               onClick={() => {
                 requestSort('firstName');
               }}
@@ -111,9 +114,7 @@ export default function Table({ applicants, deleteContact }) {
                   type="button"
                   id={item.id}
                   onClick={deleteContact}
-                >
-                  Delete
-                </button>
+                ></button>
               </td>
             </tr>
           );

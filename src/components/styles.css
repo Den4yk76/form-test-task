@@ -30,16 +30,25 @@ button {
 }
 
 .form-container {
+  border: 1px solid lightsalmon;
+  border-radius: 8px;
   width: 450px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: lightyellow;
 }
 
 .form-heading {
   margin-bottom: 20px;
   text-align: center;
+}
+
+.stroke {
+  color: orange;
+  text-shadow: 1px 0 1px #000, 
+                 0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
 }
 
 .nothing-to-show-heading {

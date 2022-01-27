@@ -27,7 +27,7 @@ export default function Form({ addContact }) {
   return (
     <form onSubmit={onSubmit}>
       <label className="label" htmlFor="first-name">
-        First Name:
+        <span className="stroke">First </span> name:
       </label>
       <input
         className="form-input form-input--validation"
@@ -44,7 +44,7 @@ export default function Form({ addContact }) {
         }}
       />
       <label className="label" htmlFor="last-name">
-        Last name:
+        <span className="stroke">Last </span> name:
       </label>
       <input
         className="form-input form-input--validation"
@@ -61,7 +61,7 @@ export default function Form({ addContact }) {
         }}
       />
       <label className="label" htmlFor="phone">
-        Phone:
+        <span className="stroke">P</span>hone:
       </label>
       <input
         className="form-input form-input--validation"
@@ -78,7 +78,7 @@ export default function Form({ addContact }) {
         }}
       />
       <label className="label" htmlFor="label-group">
-        Gender:
+        <span className="stroke">G</span>ender:
         <div id="label-group">
           <input
             className="gender-input"
@@ -111,7 +111,7 @@ export default function Form({ addContact }) {
         </div>
       </label>
       <label className="label" htmlFor="age">
-        Age:
+        <span className="stroke">A</span>ge:
       </label>
       <input
         className="form-input form-input--validation"
@@ -128,7 +128,7 @@ export default function Form({ addContact }) {
         }}
       />
       <button className="form-button" type="submit" value="Submit">
-        Add friend
+        <span className="stroke">Add</span> friend
       </button>
     </form>
   );
