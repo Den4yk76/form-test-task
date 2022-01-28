@@ -45,7 +45,7 @@ export default function Table({ applicants, deleteContact }) {
         <table className="table">
             <thead>
                 <tr>
-                    <th>
+                    <th className="table-head-first">
                         <button
                             className={
                                 'table-head-btn table-head-btn--first ' +
@@ -59,7 +59,7 @@ export default function Table({ applicants, deleteContact }) {
                             name
                         </button>
                     </th>
-                    <th>
+                    <th className="table-head-first">
                         <button
                             className={
                                 'table-head-btn ' + getClassNamesFor('lastName')
@@ -72,7 +72,7 @@ export default function Table({ applicants, deleteContact }) {
                             name
                         </button>
                     </th>
-                    <th>
+                    <th className="table-head-second">
                         <button
                             className={
                                 'table-head-btn ' + getClassNamesFor('phone')
@@ -84,7 +84,7 @@ export default function Table({ applicants, deleteContact }) {
                             <span className="stroke">P</span>hone
                         </button>
                     </th>
-                    <th>
+                    <th className="table-head-third">
                         <button
                             className={
                                 'table-head-btn ' + getClassNamesFor('gender')
@@ -96,7 +96,7 @@ export default function Table({ applicants, deleteContact }) {
                             <span className="stroke">G</span>ender
                         </button>
                     </th>
-                    <th>
+                    <th className="table-head-third">
                         <button
                             className={
                                 'table-head-btn ' + getClassNamesFor('age')
@@ -108,7 +108,7 @@ export default function Table({ applicants, deleteContact }) {
                             <span className="stroke">A</span>ge
                         </button>
                     </th>
-                    <th>
+                    <th className="table-head">
                         <span className="stroke">D</span>eletion
                     </th>
                 </tr>

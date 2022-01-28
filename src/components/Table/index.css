@@ -50,10 +50,22 @@
 }
 
 .table {
-    width: 50%;
+    width: 75%;
     margin-right: auto;
     margin-left: auto;
     border: none;
+}
+
+.table-head-first {
+    width: 25%;
+}
+
+.table-head-second {
+    width: 20%;
+}
+
+.table-head-third {
+    width: 12%;
 }
 
 .table thead th {
