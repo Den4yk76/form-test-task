@@ -7,7 +7,7 @@ export default function Table({ applicants, deleteContact }) {
         direction: null,
     });
 
-    useMemo(() => {
+    const sortedItems = useMemo(() => {
         let sortedApplicants = [...applicants];
         if (sortConfig.sortField !== null) {
             sortedApplicants.sort((a, b) => {
@@ -114,7 +114,7 @@ export default function Table({ applicants, deleteContact }) {
                 </tr>
             </thead>
             <tbody>
-                {applicants.map(item => {
+                {sortedItems.map(item => {
                     return (
                         <tr key={item.id}>
                             <td>{item.firstName}</td>
