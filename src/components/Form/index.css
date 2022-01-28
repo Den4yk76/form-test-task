@@ -1,3 +1,8 @@
+.form-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .label {
     display: block;
     margin-bottom: 10px;
@@ -50,6 +55,7 @@
     margin: 10px auto 0 auto;
 }
 
-.form-button:hover, .form-button:focus {
+.form-button:hover,
+.form-button:focus {
     background-color: rgb(255, 72, 0);
 }

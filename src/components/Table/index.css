@@ -15,7 +15,8 @@
     background-color: lightyellow;
 }
 
-.table-head-btn:hover, .table-head-btn:focus {
+.table-head-btn:hover,
+.table-head-btn:focus {
     background-color: rgb(255, 221, 70);
 }
 
@@ -23,7 +24,8 @@
     border-radius: 8px 0 0 8px;
 }
 
-.table-head-btn.ascending, .table-head-btn.descending {
+.table-head-btn.ascending,
+.table-head-btn.descending {
     background-color: rgb(255, 221, 70);
 }
 
@@ -48,19 +50,19 @@
 }
 
 .table {
-	width: 100%; 
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-	border: none;
+    border: none;
 }
 
- .table thead th {
-	font-weight: bold;
-	text-align: left;
+.table thead th {
+    font-weight: bold;
+    text-align: left;
     padding: 0;
-	border: 1px solid lightsalmon;
-	background-color: lightyellow;
-	font-size: 14px; 
+    border: 1px solid lightsalmon;
+    background-color: lightyellow;
+    font-size: 14px;
 }
 
 .table thead tr th:first-child {
@@ -73,18 +75,18 @@
 }
 
 .table tbody td {
-    text-align: left; 
-	border: none;
+    text-align: left;
+    border: none;
     padding-left: 15px;
-	font-size: 14px;   
-    font-weight: 500;  
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.table tbody tr:nth-child(even){
+.table tbody tr:nth-child(even) {
     background-color: lightsalmon;
 }
 
-.table tbody tr:nth-child(odd){
+.table tbody tr:nth-child(odd) {
     background-color: rgb(255, 134, 86);
 }
 
@@ -96,8 +98,7 @@
     background-color: white;
     padding: 0;
     display: flex;
-    
-} 
+}
 
 .table-body-button {
     border: none;
@@ -111,17 +112,19 @@
     object-fit: contain;
     background-repeat: no-repeat;
     background-position: center;
-} 
+}
 
-.table tbody tr:nth-child(even) .table-body-button{
+.table tbody tr:nth-child(even) .table-body-button {
     background-color: lightsalmon;
 }
 
-.table tbody tr:nth-child(odd) .table-body-button{
+.table tbody tr:nth-child(odd) .table-body-button {
     background-color: rgb(255, 134, 86);
 }
 
-.table tbody tr:nth-child(even) .table-body-button:hover, .table tbody tr:nth-child(even) .table-body-button:focus,
-.table tbody tr:nth-child(odd) .table-body-button:hover, .table tbody tr:nth-child(odd) .table-body-button:focus {
+.table tbody tr:nth-child(even) .table-body-button:hover,
+.table tbody tr:nth-child(even) .table-body-button:focus,
+.table tbody tr:nth-child(odd) .table-body-button:hover,
+.table tbody tr:nth-child(odd) .table-body-button:focus {
     background-color: rgb(255, 72, 0);
 }

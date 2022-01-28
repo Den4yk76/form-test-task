@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import './index.css';
 
 export default function Table({ applicants, deleteContact }) {
@@ -7,19 +7,21 @@ export default function Table({ applicants, deleteContact }) {
         direction: null,
     });
 
-    let sortedApplicants = [...applicants];
-
-    if (sortConfig.sortField !== null) {
-        sortedApplicants.sort((a, b) => {
-            if (a[sortConfig.sortField] < b[sortConfig.sortField]) {
-                return sortConfig.direction === 'ascending' ? -1 : 1;
-            }
-            if (a[sortConfig.sortField] > b[sortConfig.sortField]) {
-                return sortConfig.direction === 'ascending' ? 1 : -1;
-            }
-            return 0;
-        });
-    }
+    useMemo(() => {
+        let sortedApplicants = [...applicants];
+        if (sortConfig.sortField !== null) {
+            sortedApplicants.sort((a, b) => {
+                if (a[sortConfig.sortField] < b[sortConfig.sortField]) {
+                    return sortConfig.direction === 'ascending' ? -1 : 1;
+                }
+                if (a[sortConfig.sortField] > b[sortConfig.sortField]) {
+                    return sortConfig.direction === 'ascending' ? 1 : -1;
+                }
+                return 0;
+            });
+        }
+        return sortedApplicants;
+    }, [applicants, sortConfig]);
 
     const requestSort = sortField => {
         let direction = 'ascending';
@@ -107,12 +109,12 @@ export default function Table({ applicants, deleteContact }) {
                         </button>
                     </th>
                     <th>
-                        <span className="stroke stroke--delete">D</span>eletion
+                        <span className="stroke">D</span>eletion
                     </th>
                 </tr>
             </thead>
             <tbody>
-                {sortedApplicants.map(item => {
+                {applicants.map(item => {
                     return (
                         <tr key={item.id}>
                             <td>{item.firstName}</td>

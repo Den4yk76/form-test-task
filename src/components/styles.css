@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1,
@@ -9,56 +9,45 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #root {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px 0 15px;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #212121;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .form-container {
-  border: 1px solid lightsalmon;
-  border-radius: 8px;
-  width: 450px;
-  margin: 50px auto;
-  padding: 50px;
-  background-color: lightyellow;
-}
-
-.form-heading {
-  margin-bottom: 20px;
-  text-align: center;
+    border: 1px solid lightsalmon;
+    border-radius: 8px;
+    width: 450px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: lightyellow;
 }
 
 .stroke {
-  color: orange;
-  text-shadow: 1px 0 1px #000, 
-                 0 1px 1px #000, 
-                -1px 0 1px #000, 
-                0 -1px 1px #000;
+    color: orange;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000,
+        0 -1px 1px #000;
 }
 
 .stroke--table {
-  margin-right: 5px;
-}
-
-.stroke--delete {
-  /* color: rgb(255, 61, 61);s */
+    margin-right: 5px;
 }
 
 .nothing-to-show-heading {
-  text-align: center;
+    text-align: center;
 }
