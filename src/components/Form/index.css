@@ -1,7 +1,7 @@
 .label {
- display: block;
- margin-bottom: 10px;
- font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .label:not(:first-child) {
@@ -9,7 +9,7 @@
 }
 
 #label-group {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 .gender-input:not(:first-child) {
@@ -17,7 +17,7 @@ margin-top: 10px;
 }
 
 .gender-label {
-font-weight: 100;
+    font-weight: 300;
 }
 
 .gender-label:not(:first-child) {
@@ -51,5 +51,5 @@ font-weight: 100;
 }
 
 .form-button:hover, .form-button:focus {
-    background-color: rgb(255, 142, 97);
+    background-color: rgb(255, 72, 0);
 }

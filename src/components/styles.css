@@ -51,6 +51,14 @@ button {
                 0 -1px 1px #000;
 }
 
+.stroke--table {
+  margin-right: 5px;
+}
+
+.stroke--delete {
+  /* color: rgb(255, 61, 61);s */
+}
+
 .nothing-to-show-heading {
   text-align: center;
 }
